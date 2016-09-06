@@ -1,6 +1,6 @@
 class InfoController < ApplicationController
   def index
-    file = File.read('/Users/apellitieri/Desktop/test.json')
+    file = File.read('/data/info.json')
     data_hash = JSON.parse(file)
     @title = data_hash['title']
     @description = data_hash['description']
