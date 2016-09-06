@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    p.rounded{
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#">CDC Services</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Service Dashboard</a></li>
+      <li class="disabled"><a href="#">Admin Panel</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h1 align="center">Service Info <small><%= @title %></small></h1>
+<div class="container">
+
+<!--   {% if err_msg %}
+    <br/><br/><br/>
+    <div class="alert alert-warning">
+      <strong>Feedback: </strong> {{ err_msg }}
+    </div>
+  {% endif %} -->
+  <p><strong>Service Title: </strong> <%= @title %> </p>
+  <p><strong>Description: </strong> <%= @description %> </p>
+
+<!--   <div class="alert alert-info">
+    <strong>Instruction: </strong> Please choose an XML document to validate and a schema to validate against.
+  </div>
+  <form action="" method="post" enctype="multipart/form-data">
+    <p>XML File:
+    <input type="file" name="file_up"><br/>
+    </p>
+    <button type="submit" class="btn btn-success btn-md col-sm-2" value="Upload"><span class="glyphicon glyphicon-edit"></span>&nbsp Validate</button>
+  </form> -->
+
+
+
+</div>
+<!-- <div class="container-fluid">
+  <br/><br/>
+  <div class="col-sm-12">
+  <h4>Validation Types: <small>(more coming soon)</small></h4>
+  <a href="#" class="btn btn-info" role="button">XML</a>
+  <a href="#" class="btn btn-info disabled" role="button">JSON</a>
+  </div>
+</div> -->
+</body>
+</html>
+
+
+
+<!-- <h1>Info#index</h1>
+<p>Find me in app/views/info/index.html.erb</p>
+ -->
